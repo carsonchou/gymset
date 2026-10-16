@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GymSet AI Terms of Use</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav><a class="brand" href="../../index.html#en">GymSet AI</a> <a href="../../en/privacy/index.html">Privacy Policy</a> <a href="../../en/terms/index.html">Terms of Use</a> <a href="../../support/index.html#en">Support</a> <a href="../../delete-account/index.html#en">Delete account</a> <a href="../../terms/index.html">中文</a></nav>
+<main>
+<h1>GymSet AI Terms of Use</h1>
+<p>Last updated: 2026-10-08</p>
+<p>By using GymSet AI (&quot;the App&quot;), you agree to these terms.</p>
+<ul>
+<li>Operator: CHOU TING-RUI (individual developer)</li>
+<li>Contact: support@gymsetai.com</li>
+</ul>
+<h2>1. Accounts</h2>
+<ul>
+<li>Sign up with a valid email address and keep your password safe.</li>
+<li>You must be at least 13 years old to use the App. If you are under 18 (or under the age of majority where you live), you must first get your parent's or guardian's consent.</li>
+<li>Use only your own account. Don't pretend to be someone else.</li>
+</ul>
+<h2>2. The service</h2>
+<p>The App lets you log your workouts and take part in one-on-one battles. In a battle, both players train every day and upload a proof photo. Each day earns a score based on how much you trained, and the player with the higher 7-day total wins. Either player can reject a check-in they believe is fake. There are two ways to start a battle:</p>
+<ul>
+<li><strong>Friend room</strong>: you send out an invite code, and whoever has the code enters it to join.</li>
+<li><strong>Random match</strong>: you tap &quot;Random match&quot; to join the queue, and the App pairs you with another user who is also in the queue. <strong>That opponent is usually someone you don't know</strong>, and you can't choose them in advance. A random match can pair you with a user of any age (the minimum age of 13 still applies), and your opponent can see your nickname, your check-in photos, and the sets, cardio minutes, and daily score you report each day. If you are a minor, we suggest using friend rooms only.</li>
+</ul>
+<p>Both kinds of battle follow the same rules, and these terms apply to both.</p>
+<ul>
+<li>Battles involve <strong>no money, points or prizes</strong>, and must not be used for betting. Battle scores only decide who wins that battle; the results of random matches and random group rooms also affect your rank (see &quot;Ranks&quot; below). Neither scores nor ranks can be exchanged for anything, and they have no monetary value.</li>
+<li>The &quot;AI suggests&quot; weight is a simple calculation based on your previous workout. It is <strong>not medical or professional training advice</strong>. Train within your limits. If you feel unwell, stop and see a doctor.</li>
+</ul>
+<h3>Battle rules and scoring</h3>
+<p>A battle lasts 7 days. It starts the day after your opponent joins (or the day after you are matched). Days are counted in the battle's time zone, which is currently always Taipei time (UTC+8).</p>
+<p>Each player gets a &quot;daily score&quot; for each day. The 7 daily scores are added up. <strong>The player with the higher total wins. If the totals are equal, the battle is a draw.</strong></p>
+<p>Every battle runs the full 7 days and never ends early. The only exception is when one player deletes their account while the battle is in progress: that battle ends early and the other player wins, even if the player who deleted their account was ahead at the time. The total of the player who deleted their account is frozen as it stood at that moment. If the 7 days had already ended and the battle was only waiting to be settled, the actual totals decide the result.</p>
+<p>How the daily score is calculated:</p>
+<div class="table"><table>
+<thead><tr><th>What happened that day</th><th>Daily score</th></tr></thead>
+<tbody>
+<tr><td>No valid check-in</td><td><strong>−10</strong></td></tr>
+<tr><td>Checked in (with a photo, and not rejected)</td><td><code>10 + 40 × (1 − 0.5^(n ÷ 20)) − max(0, n − 50)</code>, with a minimum of <strong>−20</strong> for the day</td></tr>
+<tr><td>Check-in rejected by your opponent</td><td><strong>−10</strong></td></tr>
+</tbody>
+</table></div>
+<ul>
+<li><code>n</code> = the number of strength sets you completed that day + your cardio minutes ÷ 3.</li>
+<li><code>0.5^(n ÷ 20)</code> means 0.5 raised to the power of (n ÷ 20). <code>max(0, n − 50)</code> means that once n is above 50, every extra 1 takes 1 off your score.</li>
+<li>So the score rises as n grows, but more and more slowly, and it is highest at n = 50. Above 50, the score goes down.</li>
+<li>Each daily score is rounded to 1 decimal place before the scores are added up.</li>
+<li>The total shown in the App already includes today's provisional score. If you haven't checked in yet today, today counts as 0. If the day ends and you still haven't checked in, that day scores −10.</li>
+<li>If you miss a check-in, you can still submit it until 4:00 AM the next day. Once you do, that day is scored with the formula.</li>
+<li>Your opponent can reject your check-in until 12:00 PM the next day. A rejected day scores −10, and a rejection cannot be undone.</li>
+<li>A day's score becomes final only after 12:00 PM the next day (the rejection deadline). Until then it is provisional and can still change.</li>
+</ul>
+<p>Examples (checked in, and not rejected):</p>
+<div class="table"><table>
+<thead><tr><th>n</th><th>Daily score</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>10</td></tr>
+<tr><td>20</td><td>30</td></tr>
+<tr><td>40</td><td>40</td></tr>
+<tr><td>50</td><td>42.9 (the highest)</td></tr>
+<tr><td>60</td><td>35</td></tr>
+<tr><td>80</td><td>17.5</td></tr>
+<tr><td>100</td><td>−1.3</td></tr>
+<tr><td>120 or more</td><td>−20</td></tr>
+</tbody>
+</table></div>
+<p>For example, if you complete 15 strength sets and run for 15 minutes: n = 15 + 15 ÷ 3 = 20, and your daily score is 30.</p>
+<p>Please note the following about scoring:</p>
+<ul>
+<li><strong>You report the sets and cardio minutes yourself.</strong> They come from the workout you log in the App (the sets you check off and the cardio minutes you enter). Our server calculates the score with the formula above, but we do not check whether the numbers you report are true. Please log honestly.</li>
+<li><strong>Your opponent can see them and can reject.</strong> Your opponent can see the sets, cardio minutes, daily score, and check-in photo you report each day, and can reject the check-in before the deadline above. What discourages inflated numbers is that the formula lowers the score once n is above 50, and that your opponent can reject.</li>
+<li><strong>Check-in photos for cardio.</strong> When your workout includes cardio, photograph a screen that shows the time or distance. Do not photograph a route map (the Privacy Policy explains why).</li>
+<li><strong>The numbers may change.</strong> The constants in the formula (for example 10, 40, 20, 50, 3, and −10 and −20) may be adjusted later. If we adjust them, we will update these terms and the &quot;Last updated&quot; date at the top of this page.</li>
+</ul>
+<h3>Ranks</h3>
+<p>Only battles started at <strong>random</strong> count toward your rank: random 1v1 matches, plus random team battles (2v2, 3v3, 5v5) and random ranking rooms (together, &quot;random group rooms&quot;). Friend rooms and group rooms opened with an invite code do not.</p>
+<ul>
+<li>Ranks from lowest to highest are Newbie, Gym Rat, Grinder, Swole, Beast and Juggernaut, each split into divisions 1 to 3. The top rank is Gym God (you must be Juggernaut 3, have played a ranked battle in the last 60 days, and be in the top 1% of players who have finished placement, with at least 1 spot; at most 10 players hold it).</li>
+<li>Each division runs from 0 to 100 points. Reach 100 to move up a division; drop below 0 to move down. A win is +35 and a loss is −25 before adjustments; a draw changes nothing.</li>
+<li>Three adjustments are added: whether your hidden skill rating is above or below your current rank (up to ±10), beating someone rated above you adds more and losing to someone rated below you costs more (up to 10), and the difference between the two total scores (±1 per 10 points, up to ±5). A win is always at least +10 and a loss at least −5. The hidden skill rating is calculated by the system from your results and is not shown.</li>
+<li>Your first 2 ranked battles are placement matches. Your rank appears after them, and placement tops out at Grinder 1.</li>
+<li>If your opponent never checks in during the battle, your win is worth only +10. If you never check in, you lose points as usual; 2 such battles in a row pause random matching for 3 days (friend rooms are not affected).</li>
+<li>If your opponent deletes their account while a battle is in progress, that battle does not change your rank.</li>
+<li>Season 1 (S1) runs until June 30, 2027. After that, each season lasts half a year (January to June, July to December). At a new season you drop one tier (Newbie stays put) and keep a badge for the highest rank you reached that season. The badge is awarded the first time you tap Random match, or the first time one of your ranked battles is settled, after the season changes. After 60 days without a ranked battle your rank is hidden until you play one.</li>
+<li>Random matching first looks for players within one tier of you; after 1 day in the queue it widens to two tiers, and after 2 days to any rank.</li>
+<li><strong>Joining a random group room</strong>: you can only join on your own; invite codes can't bring friends in. <strong>The people in the room are usually people you don't know</strong>, and everyone in the room can see your nickname, rank, check-in photos, and the sets, cardio minutes and daily score you report each day. If you are a minor, we suggest using friend rooms only. A team battle starts only when full, with teams assigned by the App. A ranking room holds 6 players and starts when full, or after 24 hours with at least 3 players. You can be in up to 3 random group rooms at a time, and a room that hasn't started within 7 days is cancelled. The tier rules above apply, checked against everyone in the room.</li>
+<li><strong>Rank points in a ranking room</strong>: with N players who checked in, 1st place gets +(35 + N) and last place −25 before adjustments, with the places in between spread evenly; equal totals share a place (for example, 3 players get +38 / +7 / −25).</li>
+<li><strong>Rank points in a team battle</strong>: everyone on the winning team gets +35 and everyone on the losing team −25 before adjustments; a draw changes nothing. Your place within your team by total score shifts that by up to ±5 (the MVP gains the most or loses the least, the bottom player the reverse).</li>
+<li><strong>Adjustments in group rooms</strong>: the hidden-skill-rating adjustment above applies (up to ±10); when your opponents' average rating is above yours, a gain is larger; when it is below yours, a loss is larger (up to 10; team battles compare team averages). Group rooms ignore score margins, and adjustments never turn a gain into a loss or a loss into a gain.</li>
+<li><strong>No check-ins and deleted accounts in group rooms</strong>: anyone who never checks in gets −25 before adjustments, even if their team wins or draws, and it counts toward the pause above. If none of your opponents ever check in, a win is worth only +10. Players who delete their account mid-battle are unaffected.</li>
+<li><strong>Hidden skill rating in group rooms</strong>: Elo against each opponent, averaged, with K = 60 (300 during placement). Ranking rooms compare individual totals; team battles use the team result. If you checked in, opponents who never did are left out. Placement, seasons and hidden ranks work as in 1v1.</li>
+</ul>
+<p>These values may be adjusted in the future; these Terms and the in-app rules page will be updated when they are.</p>
+<h2>3. User content</h2>
+<p>Your <strong>proof photos</strong>, your <strong>nickname</strong>, and any text you enter, such as plan names and notes, are your content:</p>
+<ul>
+<li>You must have the right to upload it.</li>
+<li>Your battle opponents can see your proof photos, your nickname, the workout you use for each check-in, and the sets, cardio minutes, and daily score you report each day. In a random match, that opponent is a user you don't know.</li>
+<li>You allow us to store and process your content, and to show it to your opponents, so we can run the service.</li>
+</ul>
+<h3>Prohibited content and conduct</h3>
+<p>Do not upload or set:</p>
+<ol>
+<li>Nudity, sexual, or sexually suggestive photos.</li>
+<li>Violent, gory, or self-harm content.</li>
+<li>Harassing, bullying, discriminatory, or hateful content, including nicknames.</li>
+<li>Photos of other people taken without their consent, or other people's personal information.</li>
+<li>Content that infringes copyright, trademarks, or other rights.</li>
+<li>Illegal content, or content that promotes illegal goods.</li>
+<li>Photos unrelated to training that are meant to harass your opponent.</li>
+</ol>
+<p>Also, do not:</p>
+<ul>
+<li>Attack, disrupt, or try to get around the App's security, for example by trying to access battles or photos that aren't yours.</li>
+<li>Use automated tools to create accounts or battles in bulk.</li>
+</ul>
+<p>We do not review photos before they are shown, and the App has no automatic filtering. Proof photos are visible only to the two players in that battle. They are not public. Your opponent in a random match is a stranger, so don't put anything in a photo or nickname that you wouldn't want a stranger to see.</p>
+<h2>4. Reporting and enforcement</h2>
+<ul>
+<li>Reporting and blocking work the same way in friend rooms and random matches. If you see an inappropriate photo or nickname in a battle, tap &quot;Report or block&quot; at the bottom right of your opponent's card on the battle screen, choose a reason, and send it. You can also email <strong>support@gymsetai.com</strong>. Include your account email, your opponent's nickname, the battle date, and a description of the problem.</li>
+<li>We review reports within 24 hours of receiving them. If we confirm a violation, we will remove the content and may disable the account.</li>
+<li>The &quot;Reject&quot; button in a battle only marks that day's check-in as not counting (the score for that day becomes −10). <strong>It is not a way to report content.</strong></li>
+<li>From the same menu you can tap &quot;Block this user&quot;. After blocking, you no longer see their proof photos, neither of you can join the other's battles or start a rematch, and random matching will not pair the two of you again; a battle already in progress continues until it ends. Blocking does not hide the photos you have already uploaded in a battle in progress from the other user. You can unblock under &quot;Blocked users&quot; on the Profile tab. Other ways to avoid someone: don't share your invite code with them, take back a battle nobody has joined yet, leave the random-match queue before you are paired, or decline their rematch invite.</li>
+</ul>
+<h2>5. Termination</h2>
+<ul>
+<li>You can stop using the App at any time. You can also delete your account in the App: open the <strong>Profile</strong> tab, scroll to the bottom, tap <strong>Delete account</strong> (the red text below <strong>Log out</strong>), and then tap <strong>Delete forever</strong> in the confirmation dialog. See the Privacy Policy for what is kept after deletion.</li>
+<li>If you violate these terms, we may suspend or terminate your account without notice.</li>
+</ul>
+<h2>6. Disclaimer and limitation of liability</h2>
+<ul>
+<li>The App is provided &quot;as is.&quot; We work to keep it running, but we can't guarantee it will never go down or that data will never be lost.</li>
+<li>Training carries a risk of injury. The App's content (including the &quot;AI suggests&quot; weight) is not medical advice. If you feel unwell, stop training and consult a doctor or another qualified professional.</li>
+<li>To the extent the law allows, we are not liable for indirect damages arising from your use of the App.</li>
+<li>Nothing in these terms excludes or limits liability that cannot be excluded or limited by law.</li>
+</ul>
+<h2>7. Changes</h2>
+<p>If we make significant changes to these terms, we'll announce them on our website and update the &quot;Last updated&quot; date at the top of this page. If you keep using the App after a change, you accept the new terms.</p>
+<h2>8. Governing law and jurisdiction</h2>
+<p>These terms are governed by the laws of the Republic of China (Taiwan). The Taiwan Taipei District Court is the court of first instance for disputes arising from these terms. This does not take away any rights that consumers have under the mandatory rules of the place where they live.</p>
+<h2>9. Contact</h2>
+<p>support@gymsetai.com</p>
+</main>
+</body>
+</html>
